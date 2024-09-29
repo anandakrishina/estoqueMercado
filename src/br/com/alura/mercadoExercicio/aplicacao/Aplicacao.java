@@ -4,6 +4,7 @@ import br.com.alura.mercadoExercicio.modelo.ProdutoPerecivel;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Aplicacao {
     public static void main(String[] args) {
@@ -19,9 +20,19 @@ public class Aplicacao {
         perecivelArrayList.add(queijo);
         perecivelArrayList.add(leite);
 
-        for (ProdutoPerecivel produto : perecivelArrayList) {
-            System.out.println(produto.toString() + "\n-------------");
+        for (ProdutoPerecivel produtoPerecivel : perecivelArrayList) {
+            System.out.println(produtoPerecivel.toString() + "\n-------------");
         }
+
+        Collections.sort(perecivelArrayList);
+        for (ProdutoPerecivel produto : perecivelArrayList) {
+            System.out.println("Produto: "+produto.getNome() + " Validade: "+ produto.getDataValidade()+"\n-------------");
+        }
+
+        System.out.println("***************************");
+
+
+
 
     }
 }

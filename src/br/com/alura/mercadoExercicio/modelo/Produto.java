@@ -40,4 +40,7 @@ public class Produto {
         return "Produto: " + nome + "\nPreco: " + preco +
                 "\nQuantidade em estoque: " + quantidade;
     }
+
+
+
 }
