@@ -45,6 +45,10 @@ public class Aplicacao {
     this.dadosIniciaisCarregados = true;
   }
 
+  public void ordenaProdutos() {
+    Collections.sort(this.listaDeProdutosPereciveis);
+  }
+
   public void listarProdutos() {
     if(!this.listaDeProdutosPereciveis.isEmpty()) {
       for(ProdutoPerecivel produtoPerecivel : this.listaDeProdutosPereciveis) {
@@ -53,10 +57,6 @@ public class Aplicacao {
     } else {
       System.out.println("Não há itens na lista");
     }
-  }
-
-  public void ordenaProdutos() {
-    Collections.sort(this.listaDeProdutosPereciveis);
   }
 
   public void listarNomeValidadeProdutos() {
