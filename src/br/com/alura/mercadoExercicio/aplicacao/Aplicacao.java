@@ -53,7 +53,6 @@ public class Aplicacao {
     } else {
       System.out.println("Não há itens na lista");
     }
-
   }
 
   public void ordenaProdutos() {
